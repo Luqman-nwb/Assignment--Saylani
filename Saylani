@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>ASSIGNMENT</title>
+
+
+
+<body>
+
+<script>
+//Start of Question 1
+
+function addNumbrClosure(num) {
+  return function(x) {
+    return num + x;
+  };
+}
+
+const add5 = addNumberClosure(5);
+console.log(ad5(10)); 
+consle.log(add5(20));
+console.log(add5(30)); 
+
+
+//End of Question
+
+
+
+
+//Start of Question 2
+
+function searchArray(arr, value) {
+  // base case
+  if (arr.length === 0) {
+    return false;
+  }
+  
+  
+  if (arr[0] === value) {
+    return true;
+  }
+  
+ 
+  return searchArray(arr.slice(1), value);
+}
+
+
+//End of Question 2
+
+
+
+//Star of Question 3
+
+function addParagraph(text) {
+  const newPara = document.createElement("p");
+  const textNode = document.createTextNode(text);
+  newPara.appendChild(textNode);
+  document.body.appendChild(newPara);
+}
+
+addParagraph("This is a new paragraph.");
+
+//End of Question 3
+
+
+
+
+//Start Of Question 4
+
+function addListItem(text) {
+  const newLi = document.createElement("li");
+  const textNode = document.createTextNode(text);
+  newLi.appendChild(textNode);
+  const list = document.querySelector("ul");
+  list.appendChild(newLi);
+}
+addListItem("This is a new list item.");
+
+//End of Question 4
+
+
+
+
+
+//Start of Question 5
+
+function changeBackgroundColor(element, color) {
+  element.style.backgroundColor = color;
+}
+
+const div = document.querySelector("div");
+changeBackgroundColor(div, "red");
+
+//End of Question 5
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
